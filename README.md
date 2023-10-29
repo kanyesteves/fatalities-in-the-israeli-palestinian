@@ -15,7 +15,7 @@ O confronto travado entre Israel e Palestina é um dos conflitos de mais longa d
 
 
 ### Observações:
-- Como primeiro projeto procurei trazer um assunto bem relevante, para poder praticar com as bibliotecas as melhores formas para se tratar os dados e deixa-los organizados. Ainda não está finalizado, mas ja deu para aprender bastante coisa sobre um pouco dos processos que os analistas e cientistas de dados tem no seu dia a dia.
+Como primeiro projeto procurei trazer um assunto bem relevante, para poder praticar com as bibliotecas as melhores formas para se tratar os dados e deixa-los organizados. Ainda não está finalizado, mas ja deu para aprender bastante coisa sobre um pouco dos processos que os analistas e cientistas de dados tem no seu dia a dia.
 
 ### Referências:
 
