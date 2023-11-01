@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-file_csv = "kanyesteves/fatalities-in-the-israeli-palestinian/master/datasets/treated_fatalities_isr_pse_conflict_2000_to_2023.csv"
+file_csv = "datasets/treated_fatalities_isr_pse_conflict_2000_to_2023.csv"
 df = pd.read_csv(file_csv)
 
 st.set_page_config(layout="wide")
