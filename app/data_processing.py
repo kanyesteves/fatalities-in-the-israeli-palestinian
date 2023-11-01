@@ -1,7 +1,7 @@
 import pandas as pd
 
-file_csv = "../datasets/fatalities_isr_pse_conflict_2000_to_2023.csv"
-treated_file_csv = "../datasets/treated_fatalities_isr_pse_conflict_2000_to_2023.csv"
+file_csv = "/workspaces//fatalities_isr_pse_conflict_2000_to_2023.csv"
+treated_file_csv = "/workspaces//treated_fatalities_isr_pse_conflict_2000_to_2023.csv"
 
 df = pd.read_csv(file_csv)
 print("DataFrame carregado")
