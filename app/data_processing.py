@@ -1,10 +1,13 @@
 import pandas as pd
+import sqlite3 as db
 
-file_csv = "datasets/fatalities_isr_pse_conflict_2000_to_2023.csv"
-treated_file_csv = "/workspaces//treated_fatalities_isr_pse_conflict_2000_to_2023.csv"
+conn = db.connect('../sql/processed_data.db')
+print("Bancos criados.")
 
+file_csv = "../datasets/fatalities_isr_pse_conflict_2000_to_2023.csv"
+treated_file_csv = "../datasets/treated_fatalities_isr_pse_conflict_2000_to_2023.csv"
 df = pd.read_csv(file_csv)
-print("DataFrame carregado")
+print("DataFrame carregado.")
 
 new_df = df[['name', 'age', 'citizenship', 'gender', 'date_of_death', 'event_location', 'event_location_district', 'event_location_region', 'killed_by']].copy()
 
@@ -28,3 +31,7 @@ new_df.drop_duplicates(keep = 'first', inplace = True)
 # Exportando DataFrame
 print("CSV exportado na pasta ../datasets")
 new_df.to_csv(treated_file_csv)
+
+
+# Criando tabelas
+new_df.to_sql('treated_data', conn, index_label='ID')
